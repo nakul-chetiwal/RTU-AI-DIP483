@@ -29,6 +29,15 @@ Implementing an AI to play Minesweeper. <br /> <br />
 # Project 4 - Knowledge-Base-Tool
 Implementing a tool that is able to create Knowledge base processing data in real time. <br /> <br />
 
+How To run <br /> <br />
+Go to API folder and run below commands:<br />
+npm install<br />
+npm start<br /> <br />
+
+Go to tool folder and run below commands<br />
+npm install<br />
+npm start<br /><br />
+
 
 https://user-images.githubusercontent.com/97463843/210154896-a52b042d-53d9-4d12-9383-f104100c5114.mp4
 
