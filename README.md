@@ -28,4 +28,8 @@ Implementing an AI to play Minesweeper. <br /> <br />
 
 # Project 4 - Knowledge-Base-Tool
 Implementing a tool that is able to create Knowledge base processing data in real time. <br /> <br />
-![Screenshot from 2023-01-01 00-49-54](https://user-images.githubusercontent.com/97463843/210153787-41da6cca-8cc0-4ddd-bc3c-71fbde628aad.png)
+
+
+https://user-images.githubusercontent.com/97463843/210154896-a52b042d-53d9-4d12-9383-f104100c5114.mp4
+
+
