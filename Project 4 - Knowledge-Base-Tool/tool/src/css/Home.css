@@ -5,7 +5,13 @@ li {
     border-radius: 2px;
 }
 
-li:hover {
-    background: rgba(0, 0, 0, 0.35);
+li span:hover {
+    background: rgba(240, 229, 229, 0.35);
     border-radius: 5px;
+}
+
+span.suggestions {
+    cursor: pointer;
+    width: 80%;
+    float: left;
 }

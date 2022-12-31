@@ -52,16 +52,22 @@ app.get('/update', (request, result) => {
     let nameExists = names.filter(name => name.name === qName);
     if (nameExists.length > 0) {
         const index = names.indexOf(nameExists[0]);
+        // get the trust level of the name in second column
+        const trustLevel = parseFloat(names[index].trust.split('\\')[0]);
 
         if (cancel) {
             // names[index].trust = `${trustLevel - (1 - trustLevel) * 0.7}`;
             names[index].trust = `${trustLevel - (1 - trustLevel) * 0.7}`;
+            console.log(names[index].trust);
+            if (names[index].trust < 0.2)
+            {
+                names.splice(index, 1);
+            }
+
         } else {
             // trust level = Pk previous  + (1 - Pk previous) * Pk new
             names[index].trust = `${trustLevel + (1 - trustLevel) * 0.7}`;
         }
-        // get the trust level of the name in second column
-        const trustLevel = parseFloat(names[index].trust.split('\\')[0]);
 
         const filteredNames = names.filter(name => {
             return name.name !== null && name.name.match(/^ *$/) === null;

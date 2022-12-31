@@ -78,19 +78,19 @@ const Home = () => {
             </div>
             <div className="col-md-4">
                 <div className="input-group rounded">
-                    <input type="text" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" autoComplete="off" value={searchValue} onChange={handleSearchInputChange} />
-                    <button type="submit" className="btn btn-outline-primary" id="search-addon" onClick={updateHandleClick}>
+                    <input type="text" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" autoComplete="off" value={searchValue} onChange={handleSearchInputChange} /> &nbsp; &nbsp;
+                    <button type="submit" className="btn btn-primary" id="search-addon" onClick={updateHandleClick}>
                         Submit
-                    </button>
-                    <button type="button" className="btn btn-outline" onClick={cancelHandleClick}>
-                        Cancel (Decrease Trust Level)
-                    </button>                    
+                    </button> &nbsp; &nbsp;
+                    <button type="button" className="btn btn-secondary" onClick={cancelHandleClick}>
+                        Click To Decrease Trust Level
+                    </button> &nbsp;                   
                 </div>
                 <div>
                     {names.length > 0 && (
                         <ul>
                             {names.map(name => (
-                                <li key={name.name}><span onClick={subMenuSelect}>{name.name}</span> <span className="badge bg-primary float-end">{name.trust}</span></li>
+                                <li key={name.name}><span className="suggestions" onClick={subMenuSelect}>{name.name}</span> <span className="badge bg-primary float-end">{name.trust}</span></li>
                             ))}
                         </ul>
                     )}
