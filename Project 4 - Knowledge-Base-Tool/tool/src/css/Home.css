@@ -1,0 +1,11 @@
+li {
+
+    list-style-type: none;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+li:hover {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+}
